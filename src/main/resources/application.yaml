@@ -1,0 +1,22 @@
+spring:
+  jms:
+    template:
+      default-destination: my-queue-1
+  artemis:
+    mode: EMBEDDED
+    host: localhost
+    port: 61616
+    embedded:
+      enabled: true
+logging:
+  level:
+    org:
+      apache:
+        activemq:
+          audit:
+            base: WARN
+            message: WARN
+vicar:
+  download:
+    messaging:
+      destination: downloadQueue
