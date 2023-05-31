@@ -1,6 +1,5 @@
 package com.github.okanikani223.vicar.web.controller;
 
-import am.ik.yavi.core.ConstraintViolation;
 import com.github.okanikani223.vicar.api.download.handler.AddDownloadRequestHandler;
 import com.github.okanikani223.vicar.api.download.vo.AddDownloadRequestInput;
 import com.github.okanikani223.vicar.web.controller.dto.AddDownloadRequestInputDto;
@@ -13,8 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.stream.Collectors;
 
 @RestController
 @RequiredArgsConstructor
