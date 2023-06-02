@@ -20,3 +20,5 @@ vicar:
   download:
     messaging:
       destination: downloadQueue
+    thread:
+      pools: 5
