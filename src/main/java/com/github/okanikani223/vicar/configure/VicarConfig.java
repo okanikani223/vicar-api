@@ -1,6 +1,6 @@
 package com.github.okanikani223.vicar.configure;
 
-import com.github.okanikani223.vicar.stereotype.Usecase;
+import com.github.okanikani223.vicar.share.bind.stereotype.Usecase;
 import jakarta.jms.ConnectionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
