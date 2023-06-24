@@ -14,12 +14,12 @@ import java.util.concurrent.ExecutorService;
 public class DownloadRequestReceptionServiceImpl implements DownloadRequestReceptionService {
     private final ExecutorService executorService;
     private final Logger logger;
-//    private final DownloadItemRepository downloadItemRepository;
+    private final DownloadItemRepository downloadItemRepository;
 
     @Override
     public void receive(DownloadRequest downloadRequest) throws Exception {
         logger.debug(downloadRequest.toString());
-//        downloadItemRepository.save(downloadRequest.toItem());
+        downloadItemRepository.save(downloadRequest.toItem());
         executorService.submit(createDownloader(downloadRequest));
     }
 
